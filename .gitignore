@@ -1,6 +1,30 @@
-node_modules
-dist/
-env
+#--------------------
+# General
+#--------------------
+
+.env
 .DS_STORE
-coverage/
-.vscode/
+.vscode
+
+#--------------------
+# Project
+#--------------------
+
+/web/env/
+
+/**/tmp/*
+!/**tmp/.gitkeep
+
+/web/**/static
+/web/**/__pycache__
+
+/web/public/*
+/web/public/main.py
+
+/client/build
+/client/coverage
+/client/node_modules
+
+/client/npm-debug.log*
+/client/yarn-debug.log*
+/client/yarn-error.log*
